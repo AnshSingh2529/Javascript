@@ -1,2 +1,2 @@
-# js_tutorial
+# Javascript
 A tutorial of javascript
