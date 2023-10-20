@@ -1,2 +1,2 @@
 # Javascript
-A tutorial of javascript
+console.log(`done`); 
