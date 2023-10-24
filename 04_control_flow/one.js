@@ -45,6 +45,33 @@
 // const marks = 100
 // if (marks > 50) console.log("pass"); //it will execute without scope (implicit scope) but not a good practice.
 
+// ---------------Nesting-------------
+
+// const balance = 1000; 
+
+// if (balance < 500) {
+//     console.log("less than 500");
+// } else if(balance < 750){
+//     console.log("less than 750");
+// } else if(balance < 900){
+//     console.log("less than 900");
+// }else{
+//     console.log("less than 1200");
+// }
+
+
+const userLoggedIn = true
+const Debitcard = true
+const userLoggedInFromGoogle = false
+const userLoggedInfromemail = true
+
+if(userLoggedIn && Debitcard){
+    console.log("Allow to buy course");
+
+}
+if (userLoggedInFromGoogle || userLoggedInfromemail) {
+    console.log("user Logged In");
+}
 
 
 
