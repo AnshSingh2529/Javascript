@@ -30,7 +30,7 @@ for(let  i = 0; i< myarray.length; i++){
 // for(let i = 1; i<=20; i++){    i
 //     if(i == 5){
 //         console.log(`detected 5`);
-//         break
+//         break                            //it will break after 4 stop printing after 4...
 //     }
 //     console.log(` index: ${i}`);
 // }
@@ -39,7 +39,12 @@ for(let  i = 0; i< myarray.length; i++){
 // for(let i = 1; i<=20; i++){    i
 //     if(i == 5){
 //         console.log(`detected 5`);
-//         continue
+//         continue                          //it will not print only 5...
 //     }
 //     console.log(` index: ${i}`);
 // }
+
+
+
+
+
