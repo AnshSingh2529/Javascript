@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ansh singh</title>
+</head>
+<body style="background-color:rgb(28, 26, 26); color: orange;">
+    <ul class="language">
+        <li>javascript</li>
+    </ul>
+    
+</body>
+<!-- How to edit or remove element in DOM -->
+<script>
+    function addname(langname) {
+        const li = document.createElement('li');
+        li.innerHTML = `${langname}`
+        document.querySelector('.language').appendChild(li)
+    }
+    addname("python")
+    addname("java")
+
+  //Optimized code
+  
+  function addOptimizelang(langName) {
+    const li = document.createElement("li")
+    li.appendChild(document.createTextNode(langName))
+    document.querySelector('.language').appendChild(li)
+  }
+  addOptimizelang("Golang")
+
+//   Editing
+  
+</script>
+</html>

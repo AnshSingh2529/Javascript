@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ansh singh</title>
+    
+</head>
+<body style="background-color: #323232; color: rgb(255, 162, 0);">
+    
+</body>
+
+<!---------How to set element in DOM(DOCUMENT OBJECT MODEL);---------->
+
+<script>
+    
+    const div = document.createElement('div')
+    console.log(div);
+    div.className = ('main')
+    div.id = Math.round(Math.random()*10+1)
+    div.setAttribute('title','generate title')
+    div.style.color = "black"
+    div.style.fontSize = "50px"
+    div.style.fontFamily = "sans-serif"
+    div.style.backgroundColor = "violet"
+    div.style.padding = "50%"
+    // div.innerText = "ansh is a good boy"
+    const text = document.createTextNode("RUN")
+    div.appendChild(text)
+    
+
+    document.body.appendChild(div)
+</script>
+
+<!-- ------------Ends here------------ -->
+</html>
