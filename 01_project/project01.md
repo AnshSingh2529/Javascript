@@ -3,7 +3,7 @@
 ## project link
 [Click here!](https://stackblitz.com/edit/web-platform-qacqzs?file=colorchanger%2Findex.html,colorchanger%2Fstyle.css,colorchanger%2Fcolor.js)
 
-# project 1 :- @Solution code
+# project 1 :- @Solution code (Color Changer)
 
 ```javascript
 const button = document.querySelectorAll('.buttons');
@@ -33,7 +33,7 @@ button.forEach(function (button) {
 });
 
 ```
-# project 2 :- @Solution code
+# project 2 :- @Solution code (Calculate Body mass Index)
 
 ```javascript
 const form = document.querySelector('form');
@@ -66,10 +66,22 @@ form.addEventListener(
 
 
 ```
- # project 3 :- @Solution code
+ # project 3 :- @Solution code (Digital clock)
 
  ```javascript
+ const clock = document.querySelector('#clock');
+
+setInterval(function () {
+  let date = new Date();
+  clock.innerHTML = date.toLocaleTimeString();
+}, 1000);
+
  
- 
+ ```
+ # project 4 :- @Solution code (Guess the number)
+ ```javascript
+
+
+
  ```
 
