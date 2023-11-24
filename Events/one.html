@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="one.js"></script>
+    <title>Events</title>
+</head>
+<body  id="body" style="background-image: url(https://images.pexels.com/photos/1762851/pexels-photo-1762851.jpeg?auto=compress&cs=tinysrgb&w=800);  ">
+    <p style=" display: flex; justify-content: center;   background-image: url(https://images.pexels.com/photos/2047905/pexels-photo-2047905.jpeg?auto=compress&cs=tinysrgb&w=800); background-size: cover; background-clip: text; -webkit-background-clip: text; color: transparent; background-position: center; font-size: xx-large;font-weight: 900;">Amazing Images</p>
+    <div>
+       <ul style="display: flex; justify-content: space-evenly; " id="image">
+        <li><img src="https://images.pexels.com/photos/56759/pexels-photo-56759.jpeg?auto=compress&cs=tinysrgb&w=800"  alt="" style="height:300px; width:300px; border: 2px solid black; border-radius: 10px;" id="one"></li>
+        <li><img src="https://images.pexels.com/photos/326502/pexels-photo-326502.jpeg?auto=compress&cs=tinysrgb&w=800"  alt="" style="height:300px; width:300px; border: 2px solid black; border-radius: 10px;" id="two"></li>
+        <li><img src="https://images.pexels.com/photos/159299/graphic-design-studio-tracfone-programming-html-159299.jpeg?auto=compress&cs=tinysrgb&w=800"  alt="" style="height:300px; width:300px; border: 2px solid black; border-radius: 10px;" id="three"></li>
+       </ul>
+    </div>
+     
+</body>
+<script>
+// const One =  document.getElementById('one')
+// One.addEventListener('click',function(){
+//     alert('One clicked');
+//  },false)
+
+//Event bubbling -propagation 1
+
+// document.getElementById('image').addEventListener('click',function(e){
+//     console.log('image clicked');
+// },false)
+
+// document.getElementById('one').addEventListener('click',function(e){
+//     console.log('One clicked');
+// },false)
+
+//Event capturing propagation 2
+
+// document.getElementById('image').addEventListener('click',function(e){
+//     console.log('image clickded');
+// },false)
+
+// document.getElementById('one').addEventListener('click',function(e){
+//     console.log('One clicked');
+//     e.stopPropagation();
+// },false)
+
+// "e.preventDefault" stop  from connecting server.
+
+
+// document.getElementById('image').addEventListener('click',function(e){
+//     console.log(e.target.tagName);
+//     if(e.target.tagName === 'IMG'){
+//         let removeit = e.target.parentNode
+//         removeit.remove();
+//     }
+
+    
+// },false);
+
+</script>
+</html>
