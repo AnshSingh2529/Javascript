@@ -175,3 +175,31 @@ function newgame() {
 
  ```
 
+ ```javascript
+//    for Start button
+    document.querySelector('#start').
+    addEventListener('click' , function(){
+        
+       let randomColor = function(){
+        let hex = "0123456789ABCDEF";
+        let color = "#";
+        for (let index = 0; index < 6; index++) {
+            color += hex[Math.floor(Math.random() * 16)];
+        }
+        document.querySelector('body').style.backgroundColor = color;
+        return color;
+    };
+    console.log(randomColor());
+       
+ let stop = setInterval(randomColor,2000);
+
+    //    for Stop button
+       document.querySelector('#stop').
+       addEventListener('click' , function(){
+       clearInterval(stop);
+    })
+    });
+
+
+ ```
+

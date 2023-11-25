@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Async project</title>
+</head>
+<body>
+    
+<h1>Async Project</h1>
+ <button id="stop">Stop</button>
+    
+</body>
+<script>
+    const sayname = function(){
+        console.log("Ansh singh");
+    };
+    setTimeout(sayname,1000);
+
+    const changetitle  = function(){
+        document.querySelector('h1').innerHTML = '<span>Project on Async</span>';
+        document.querySelector('h1').style.color = "green";
+        document.querySelector('h1').style.display = "flex";
+        document.querySelector('h1').style.justifyContent = "center";
+        document.querySelector('h1').style.fontWeight = "900";
+        document.querySelector('h1').style.fontSize = "100px";
+    } ;
+   const changeme =  setTimeout(changetitle,2000);
+    // setInterval(changetitle,2000);
+
+    document.querySelector('#stop').
+    addEventListener('click' , function(){
+        clearTimeout(changeme);
+        console.log("STOPPED");
+    })
+
+</script>
+</html>
