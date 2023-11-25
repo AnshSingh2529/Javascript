@@ -177,29 +177,35 @@ function newgame() {
 # project 5 :- @Solution code (background Color shifting)
 
  ```javascript
-//    for Start button
-    document.querySelector('#start').
-    addEventListener('click' , function(){
-        
-       let randomColor = function(){
-        let hex = "0123456789ABCDEF";
-        let color = "#";
-        for (let index = 0; index < 6; index++) {
-            color += hex[Math.floor(Math.random() * 16)];
+
+  
+    const  randomcolor = function(){
+        let hex = '0123456789ABCDEF';
+        let color = '#';
+        for (let i = 0; i < 6; i++){
+        color += hex[Math.floor(Math.random() * 16)];
         }
-        document.querySelector('body').style.backgroundColor = color;
         return color;
     };
-    console.log(randomColor());
-       
- let stop = setInterval(randomColor,2000);
 
-    //    for Stop button
-       document.querySelector('#stop').
-       addEventListener('click' , function(){
-       clearInterval(stop);
-    })
-    });
+    let intervalid;
+    let Start = function(){
+        if(!intervalid){
+        intervalid = setInterval(changecolor,2000);
+        }
+
+        function changecolor(){
+        document.body.style.backgroundColor = randomcolor();
+        };
+    };
+
+    let Stop = function(){
+        clearInterval(intervalid);
+        // intervalid = null;
+    };
+
+   document.querySelector('#start').addEventListener('click',Start);
+   document.querySelector('#stop').addEventListener('click',Stop);
 
 
  ```
