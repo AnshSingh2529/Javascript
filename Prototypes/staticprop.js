@@ -4,7 +4,7 @@ class User {
     }
 
     LogMe(){
-        console.log(``)
+        console.log(`Username:${this.username}`);
     }
 
     static createID(){
@@ -13,7 +13,7 @@ class User {
 }
 
 let user1 = new User("Anshsingh");
-console.log(user1.createID());
+// console.log(user1.createID());
 
 class teacher extends User{
     constructor(username,email){
@@ -25,4 +25,4 @@ class teacher extends User{
 
 const iphone = new teacher("Iphoneuser", "appleuser@34gmail.com");
 
-iphone.LogMe();
+console.log(iphone.createID());  //bcz we used static keyword..
